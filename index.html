@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Card</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <h1>Happy Valentine's Day!</h1>
+        <p>Dear Mary Lyn Corporal,</p>
+        <p>Will you be my Valentine?</p>
+        <div class="buttons">
+            <button onclick="showLoveMessage()">Yes</button>
+            <button onclick="showNoMessage()">No</button>
+        </div>
+    </div>
+    <div id="loveMessage" class="hidden">
+        <img src="la onion.jpeg" alt="Love Image">
+        <p class="love-text">I love you, boo</p>
+    </div>
+    <div id="noMessage" class="hidden">
+        <img src="cat crying.jpeg" alt="No Image">
+        <p class="no-text">noooooooo me sad baby huhu</p>
+    </div>
+    <script>
+        function showLoveMessage() {
+            document.getElementById('loveMessage').style.display = 'block';
+            document.getElementById('noMessage').style.display = 'none';
+        }
+
+        function showNoMessage() {
+            document.getElementById('noMessage').style.display = 'block';
+            document.getElementById('loveMessage').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
